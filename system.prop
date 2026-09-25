@@ -1,0 +1,8 @@
+ro.setupwizard.mode=DISABLED
+ro.setupwizard.enterprise_mode=1
+
+# Force ADB always ON
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
