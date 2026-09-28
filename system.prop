@@ -13,3 +13,11 @@ ro.sys.usb.storage.type=mtp
 persist.sys.root_access=3
 ro.secure=0
 ro.debuggable=1
+
+# Battery & IoT Kiosk Optimizations
+ro.radio.noril=yes
+hw.nfc.supported=0
+ro.bluetooth.alwaysbleon=0
+ro.com.google.locationfeatures=0
+ro.com.google.networklocation=0
+wifi.supplicant_scan_interval=300
