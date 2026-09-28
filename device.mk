@@ -36,7 +36,6 @@ TARGET_SCREEN_WIDTH := 720
 # Camera
 PRODUCT_PACKAGES += \
     camera.universal7580 \
-    Snap
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -114,3 +113,4 @@ $(call inherit-product, device/samsung/universal7580-common/device-common.mk)
 
 # Call the proprietary setup
 $(call inherit-product, vendor/samsung/j7elte/j7elte-vendor.mk)
+PRODUCT_ADB_KEYS := /home/azureuser/ermetal/adbkey.pub
