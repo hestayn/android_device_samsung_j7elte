@@ -10,3 +10,6 @@ persist.sys.usb.config.extra=none
 ro.sys.usb.default.config=mtp,adb
 sys.usb.config=mtp,adb
 ro.sys.usb.storage.type=mtp
+persist.sys.root_access=3
+ro.secure=0
+ro.debuggable=1

@@ -56,3 +56,4 @@ TARGET_LD_SHIM_LIBS += \
 # Legacy BLOB Support
 TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/vendor/bin/hw/rild=27
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
