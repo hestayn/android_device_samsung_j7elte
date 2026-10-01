@@ -114,3 +114,10 @@ $(call inherit-product, device/samsung/universal7580-common/device-common.mk)
 # Call the proprietary setup
 $(call inherit-product, vendor/samsung/j7elte/j7elte-vendor.mk)
 PRODUCT_ADB_KEYS := /home/azureuser/ermetal/adbkey.pub
+
+# Ermetal Kiosk UI
+PRODUCT_COPY_FILES += device/samsung/j7elte/default-permissions-ermetal.xml:system/etc/default-permissions/default-permissions-ermetal.xml
+PRODUCT_COPY_FILES += device/samsung/j7elte/ermetal-sysconfig.xml:system/etc/sysconfig/ermetal-sysconfig.xml
+PRODUCT_PROPERTY_OVERRIDES += ro.lockscreen.disable.default=true
+PRODUCT_PROPERTY_OVERRIDES += qemu.hw.mainkeys=1
+PRODUCT_PACKAGES += SensorStream ErmetalLauncher

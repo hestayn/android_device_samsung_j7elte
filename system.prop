@@ -21,3 +21,6 @@ ro.bluetooth.alwaysbleon=0
 ro.com.google.locationfeatures=0
 ro.com.google.networklocation=0
 wifi.supplicant_scan_interval=300
+
+# Disable Camera Service completely
+debug.sf.disable_hwc=1
